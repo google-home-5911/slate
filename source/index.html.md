@@ -23,9 +23,41 @@ Welcome to the working documentation for the Nationwide Conversational Assistant
 describe the collective functionality of the application. This includes its technology stack, architecture, methods, and datebase structure,
 and any other additional notes we found important to pass on to the next team of developers. 
 
-# Authentication
+# Notable Project Files
 
+## app.py
+The majority of the logic (code) for the project. Methods for app.py are listed in the App.py Methods section.
 
+## db.py
+Where all database queries are run. These queries are within the functions. Each of these functions either returns some piece of data or updates the database. They are then used in app.py methods.
+
+## db_build.py
+Constructs the Sqlite3 database. Reads from the excel file <code>Tables.xlsx</code>, which consists of the db tables in excel form, to perform the build. This allows for easy editing of tables and attributes. This file is ran locally
+
+## db_build_remote.py
+Same as <code>db_build.py</code> except ran from Google Home during the reset database intent. 
+
+## NW.DB
+The raw database file. Can be viewed with Firefox sqlite plugin (available for verions 42 and above) or any other sqlite3 management application. 
+
+## Procfile
+The mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.
+For the purposes of this project, Heroku will only need to execute the command <code>python.app.py</code> through web. 
+Read more [here](https://devcenter.heroku.com/articles/procfile)
+
+## requirements.txt
+A list of dependencies for the project. Run <code>pip install -r requirements.txt</code> to automatically install
+these dependencies.
+
+## setup.py
+In the command line, in the same directory as your <code>setup</code> folder, run python setup.py to properly install xlrd, the Excel reader for database builds. 
+
+## Tables.xlsx
+
+The Excel file representation of the database. Xlrd reads from this file in <code>db_build.py</code> to build the database, creating <code>NW.db</code>
+
+## Test.py
+The python file where automated unit tests are ran.
 
 # Architecture and System Components
 <img src="images/archgen.png">
@@ -47,7 +79,7 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 # Agile Artifacts
 
 
-# Methods
+# App.py Methods
 
 Methods related to the app's immediate functional requirements are located in app.py. These methods are as follows:
 
@@ -63,7 +95,6 @@ from flask import request, redirect, session, url_for, make_response, render_tem
 def webhook():
     req = request.get_json(silent=True, force=True)
 
-    print("Requestzzz:")
     print(json.dumps(req, indent=4))
 
     res = processRequest(req)
@@ -459,7 +490,7 @@ def lifeInsurancePolicyBreakdown(req):
     internationalROR = getInternationalROR(userID)
 
     rorDifference = lastMonthROR - overallROR
-    print("DIFFERENE:")
+    
     print(rorDifference)
     if rorDifference < 0:
         speech = "Your return rate has decreased by " + str(rorDifference) + " percent over the past month relative to your overall rate of return. You have invested " + str(internationInvestment) + " dollars in international markets, the rate of return of these funds has fallen " + str(internationalROR) + " percent."
@@ -593,3 +624,43 @@ using the same hash used for the database pin, and compare the incoming pin vers
 Parameter | Description
 --------- | -----------
 req | The request JSON. We obtain parameters <code>userID</code> and <code>mypin</code> from the request.
+
+
+## dbReset
+
+```python
+def dbReset(req):
+    os.system('python db_build_remote.py')
+    speech = "The database has been reset!"
+    return {
+        "speech": speech,
+        "displayText": speech,
+        # "data": data,
+        # "contextOut": [],
+        "source": "Nationwide-financial-assistant"
+    }
+```
+
+This is a special function created for demo purposes to reset database. 
+
+<aside class="warning">This function is not meant to satisfy any particular use case regarding the project. This is only for demo purposes; to yield the same experience each round of the demo. </aside>
+
+
+
+
+## initialize 
+
+```python 
+def initialize(req):
+    os.system('python db_build_remote.py')
+    speech = "Hello! I have some important updates regarding your Nationwide accounts. Would you like to hear it?"
+    return {
+        "speech": speech,
+        "displayText": speech,
+        # "data": data,
+        # "contextOut": [],
+        "source": "Nationwide-financial-assistant"
+    }    
+```
+
+(Re)Initializes the database and assistant after the reset.
