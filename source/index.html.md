@@ -63,10 +63,17 @@ The python file where automated unit tests are ran.
 <img src="images/archgen.png">
 
 ## General
-talk about has we get req.parameters.get("userid") such and such...
+The architecture for Google Home applications is different than conventional software solutions, but straightforward. 
+Above is a sequence diagram of the process. When the user speaks a command, called an *intent*, into the device, it gets processed by a speech engine called "Dialogflow". Dialogflow is linked with Google Actions.) You may see this linkage by going to dialogflow.com and clicking on "Integrations".) There is a list of intents, all containing trigger phrases, which Dialogflow will recognize. You can add to what Dialogflow recognizes by creating a new intent, or adding a new phrase to an existing intent. 
+<br>
+After the intent is spoken, it will in most cases be passed to the webhook. 
+
 ## Dialogflow
 
-## Heroku
+
+## The webhook and Heroku
+
+
 
 ## Sqlite3
 
