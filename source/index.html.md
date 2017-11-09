@@ -64,22 +64,59 @@ The python file where automated unit tests are ran.
 
 ## General
 The architecture for Google Home applications is different than conventional software solutions, but straightforward. 
-Above is a sequence diagram of the process. When the user speaks a command, called an *intent*, into the device, it gets processed by a speech engine called "Dialogflow". Dialogflow is linked with Google Actions.) You may see this linkage by going to dialogflow.com and clicking on "Integrations".) There is a list of intents, all containing trigger phrases, which Dialogflow will recognize. You can add to what Dialogflow recognizes by creating a new intent, or adding a new phrase to an existing intent. 
+Above is a sequence diagram of the process. When the user speaks a command, called an *intent*, into the device, it gets processed by a speech engine called "Dialogflow". 
 <br>
-After the intent is spoken, it will in most cases be passed to the webhook. 
+<br>
+Dialogflow is linked with Google Actions. (You may see this linkage by going to dialogflow.com and clicking on "Integrations"). There are a list of intents, all containing trigger phrases. A given action or response is then initiated by Dialogflow after it processes a given trigger phrase. You can add to what Dialogflow recognizes by creating a new intent, or adding a new phrase to an existing intent. 
+<br>
+<br>
+After the intent is spoken, its associated JSON will be passed to the webhook. To ensure the webhook is being used for a given intent, check "use webhook" and save. 
+<img src = "images/usewebhook.png">
+
+The webhook handles all programming logic in the application. Within the webhook, there exists a method for nmny of the intents in Dialogflow.
+
 
 ## Dialogflow
+You can log into Dialogflow.com with the email ipslifebc@gmail.com and the password of nationwidelife
+
+<br>
+
+As mentioned, Dialogflow is a speech processing engine, essentially required to develop Google Assistant apps easily. 
+Components of Dialogflow we found important to this project are [intents](https://dialogflow.com/docs/intents), [entities](https://dialogflow.com/docs/entities), [actions and parameters](https://dialogflow.com/docs/actions-and-parameters), and [contexts](https://dialogflow.com/docs/contexts).
 
 
 ## The webhook and Heroku
+Navigate to the Fulfillment tab of Dialogflow to view or edit the webhook URL.
+<img src = "images/webhookff.png">
+
+The webhook is the center of logic for the project. We could always hardcode static responses to user commands all wthin Dialogflow. But Wwen a user speaks an intent, we want variable responses depending on who the user is. This is where the webhook comes in. 
+<br>
+<br>
+The webhook is currently hosted on Heroku. It contains a list of functions and methods that correspond to user intents, as well as database calls to aid these functions. These can be seen in <code>app.py</code> and <code>db.py</code> respectively. <code>app.py</code> methods are described herein. 
+
+### How Dialogflow and the Webhook communicate
+
+## Sqlite3 and the Database
+
+The database sits on Heroku along with the rest of the application. NW.db is the primary database file. The database is created by running <code>python db_build.py</code> in a terminal. The database can be edited by opening <code>Tables.xlsx</code> found in the project directory. This file provides an Excel representation of the database which allows for easy editing.
+
+Databases tables include:
+### BANK_ACCOUNT_DETAIL
+
+### NOTIFICATIONS
+
+### POLICY_INFORMATION
+
+### POLICY_PROPOSALS
+
+### USERS
 
 
 
-## Sqlite3
-
+<img src = "images/database.png">
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+An simpleway to view the raw <code>NW.db</code> file is to utilize SQLite Manager for Firefox.
 </aside>
 
 
