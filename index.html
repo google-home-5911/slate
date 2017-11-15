@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Nationwide Life Reference</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;python&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -211,10 +211,7 @@
     <div class="toc-wrapper">
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
               <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -225,19 +222,136 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#notable-project-files" class="toc-h1 toc-link" data-title="Notable Project Files">Notable Project Files</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#app-py" class="toc-h2 toc-link" data-title="app.py">app.py</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#db-py" class="toc-h2 toc-link" data-title="db.py">db.py</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#db_build-py" class="toc-h2 toc-link" data-title="db_build.py">db_build.py</a>
+                  </li>
+                  <li>
+                    <a href="#db_build_remote-py" class="toc-h2 toc-link" data-title="db_build_remote.py">db_build_remote.py</a>
+                  </li>
+                  <li>
+                    <a href="#nw-db" class="toc-h2 toc-link" data-title="NW.DB">NW.DB</a>
+                  </li>
+                  <li>
+                    <a href="#procfile" class="toc-h2 toc-link" data-title="Procfile">Procfile</a>
+                  </li>
+                  <li>
+                    <a href="#requirements-txt" class="toc-h2 toc-link" data-title="requirements.txt">requirements.txt</a>
+                  </li>
+                  <li>
+                    <a href="#setup-py" class="toc-h2 toc-link" data-title="setup.py">setup.py</a>
+                  </li>
+                  <li>
+                    <a href="#tables-xlsx" class="toc-h2 toc-link" data-title="Tables.xlsx">Tables.xlsx</a>
+                  </li>
+                  <li>
+                    <a href="#test-py" class="toc-h2 toc-link" data-title="Test.py">Test.py</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#architecture-and-system-components" class="toc-h1 toc-link" data-title="Architecture and System Components">Architecture and System Components</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#architecture-logical-view" class="toc-h2 toc-link" data-title="Architecture Logical View">Architecture Logical View</a>
+                  </li>
+                  <li>
+                    <a href="#architecture-physical-view" class="toc-h2 toc-link" data-title="Architecture Physical View">Architecture Physical View</a>
+                  </li>
+                  <li>
+                    <a href="#general" class="toc-h2 toc-link" data-title="General">General</a>
+                  </li>
+                  <li>
+                    <a href="#dialogflow" class="toc-h2 toc-link" data-title="Dialogflow">Dialogflow</a>
+                  </li>
+                  <li>
+                    <a href="#the-webhook-and-heroku" class="toc-h2 toc-link" data-title="The webhook and Heroku">The webhook and Heroku</a>
+                  </li>
+                  <li>
+                    <a href="#sqlite3-and-the-database" class="toc-h2 toc-link" data-title="Sqlite3 and the Database">Sqlite3 and the Database</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#agile-artifacts" class="toc-h1 toc-link" data-title="Agile Artifacts">Agile Artifacts</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#context-diagram" class="toc-h2 toc-link" data-title="Context Diagram">Context Diagram</a>
+                  </li>
+                  <li>
+                    <a href="#uml-diagram" class="toc-h2 toc-link" data-title="UML Diagram">UML Diagram</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#setup-and-configuration" class="toc-h1 toc-link" data-title="Setup and Configuration">Setup and Configuration</a>
+          </li>
+          <li>
+            <a href="#app-py-methods" class="toc-h1 toc-link" data-title="App.py Methods">App.py Methods</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#webhook" class="toc-h2 toc-link" data-title="webhook">webhook</a>
+                  </li>
+                  <li>
+                    <a href="#processrequest" class="toc-h2 toc-link" data-title="processRequest">processRequest</a>
+                  </li>
+                  <li>
+                    <a href="#obtainthycredentials" class="toc-h2 toc-link" data-title="obtainThyCredentials">obtainThyCredentials</a>
+                  </li>
+                  <li>
+                    <a href="#scheduleevent" class="toc-h2 toc-link" data-title="scheduleEvent">scheduleEvent</a>
+                  </li>
+                  <li>
+                    <a href="#userinfo" class="toc-h2 toc-link" data-title="userInfo">userInfo</a>
+                  </li>
+                  <li>
+                    <a href="#changeaddress" class="toc-h2 toc-link" data-title="changeAddress">changeAddress</a>
+                  </li>
+                  <li>
+                    <a href="#changephone" class="toc-h2 toc-link" data-title="changePhone">changePhone</a>
+                  </li>
+                  <li>
+                    <a href="#changebeneficiary" class="toc-h2 toc-link" data-title="changeBeneficiary">changeBeneficiary</a>
+                  </li>
+                  <li>
+                    <a href="#changechecking" class="toc-h2 toc-link" data-title="changeChecking">changeChecking</a>
+                  </li>
+                  <li>
+                    <a href="#totalpremiumandduedate" class="toc-h2 toc-link" data-title="totalPremiumAndDueDate">totalPremiumAndDueDate</a>
+                  </li>
+                  <li>
+                    <a href="#confirmbalance" class="toc-h2 toc-link" data-title="confirmBalance">confirmBalance</a>
+                  </li>
+                  <li>
+                    <a href="#amountandduedate" class="toc-h2 toc-link" data-title="amountAndDueDate">amountAndDueDate</a>
+                  </li>
+                  <li>
+                    <a href="#payment" class="toc-h2 toc-link" data-title="payment">payment</a>
+                  </li>
+                  <li>
+                    <a href="#lifeinsurancepolicy" class="toc-h2 toc-link" data-title="lifeInsurancePolicy">lifeInsurancePolicy</a>
+                  </li>
+                  <li>
+                    <a href="#lifeinsurancepolicybreakdown" class="toc-h2 toc-link" data-title="lifeInsurancePolicyBreakdown">lifeInsurancePolicyBreakdown</a>
+                  </li>
+                  <li>
+                    <a href="#notifications-2" class="toc-h2 toc-link" data-title="notifications">notifications</a>
+                  </li>
+                  <li>
+                    <a href="#verifypinfufillrequest" class="toc-h2 toc-link" data-title="verifyPinFufillRequest">verifyPinFufillRequest</a>
+                  </li>
+                  <li>
+                    <a href="#dbreset" class="toc-h2 toc-link" data-title="dbReset">dbReset</a>
+                  </li>
+                  <li>
+                    <a href="#initialize" class="toc-h2 toc-link" data-title="initialize">initialize</a>
                   </li>
               </ul>
           </li>
@@ -254,79 +368,131 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the working documentation for the Nationwide Conversational Assistant &quot;Nationwide Life&quot;. The following sections 
+describe the collective functionality of the application. This includes its technology stack, architecture, methods, and datebase structure,
+and any other additional notes we found important to pass on to the next team of developers. </p>
+<h1 id='notable-project-files'>Notable Project Files</h1><h2 id='app-py'>app.py</h2>
+<p>The majority of the logic (code) for the project. Methods for app.py are listed in the App.py Methods section.</p>
+<h2 id='db-py'>db.py</h2>
+<p>Where all database queries are run. These queries are within the functions. Each of these functions either returns some piece of data or updates the database. They are then used in app.py methods.</p>
+<h2 id='db_build-py'>db_build.py</h2>
+<p>Constructs the Sqlite3 database. Reads from the excel file <code>Tables.xlsx</code>, which consists of the db tables in excel form, to perform the build. This allows for easy editing of tables and attributes. This file is ran locally</p>
+<h2 id='db_build_remote-py'>db_build_remote.py</h2>
+<p>Same as <code>db_build.py</code> except ran from Google Home during the reset database intent. </p>
+<h2 id='nw-db'>NW.DB</h2>
+<p>The raw database file. Can be viewed with Firefox sqlite plugin (available for verions 42 and above) or any other sqlite3 management application. </p>
+<h2 id='procfile'>Procfile</h2>
+<p>The mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.
+For the purposes of this project, Heroku will only need to execute the command <code>python.app.py</code> through web. 
+Read more <a href="https://devcenter.heroku.com/articles/procfile">here</a></p>
+<h2 id='requirements-txt'>requirements.txt</h2>
+<p>A list of dependencies for the project. Run <code>pip install -r requirements.txt</code> to automatically install
+these dependencies.</p>
+<h2 id='setup-py'>setup.py</h2>
+<p>In the command line, in the same directory as your <code>setup</code> folder, run python setup.py to properly install xlrd, the Excel reader for database builds. </p>
+<h2 id='tables-xlsx'>Tables.xlsx</h2>
+<p>The Excel file representation of the database. Xlrd reads from this file in <code>db_build.py</code> to build the database, creating <code>NW.db</code></p>
+<h2 id='test-py'>Test.py</h2>
+<p>The python file where automated unit tests are ran.</p>
+<h1 id='architecture-and-system-components'>Architecture and System Components</h1><h2 id='architecture-logical-view'>Architecture Logical View</h2>
+<p><img src="images/archgen.png"></p>
+<h2 id='architecture-physical-view'>Architecture Physical View</h2>
+<p><img src="images/physicalview.png"></p>
+<h2 id='general'>General</h2>
+<p>The architecture for Google Home applications is different than conventional software solutions, but straightforward. 
+Above is a sequence diagram of the process. When the user speaks a command, called an <em>intent</em>, into the device, it gets processed by a speech engine called &quot;Dialogflow&quot;. 
+<br>
+<br>
+Dialogflow is linked with Google Actions. (You may see this linkage by going to dialogflow.com and clicking on &quot;Integrations&quot;). There are a list of intents, all containing trigger phrases. A given action or response is then initiated by Dialogflow after it processes a given trigger phrase. You can add to what Dialogflow recognizes by creating a new intent, or adding a new phrase to an existing intent. 
+<br>
+<br>
+After the intent is spoken, its associated JSON will be passed to the webhook. To ensure the webhook is being used for a given intent, check &quot;use webhook&quot; and save. 
+<img src = "images/usewebhook.png"></p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>The webhook handles all programming logic in the application. Within the webhook, there exists a method for nmny of the intents in Dialogflow.</p>
+<h2 id='dialogflow'>Dialogflow</h2>
+<p>You can log into Dialogflow.com with the email ipslifebc@gmail.com and the password of nationwidelife</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p><br></p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>As mentioned, Dialogflow is a speech processing engine, essentially required to develop Google Assistant apps easily. 
+Components of Dialogflow we found important to this project are <a href="https://dialogflow.com/docs/intents">intents</a>, <a href="https://dialogflow.com/docs/entities">entities</a>, <a href="https://dialogflow.com/docs/actions-and-parameters">actions and parameters</a>, and <a href="https://dialogflow.com/docs/contexts">contexts</a>.</p>
+<h2 id='the-webhook-and-heroku'>The webhook and Heroku</h2>
+<p>Navigate to the Fulfillment tab of Dialogflow to view or edit the webhook URL.
+<img src = "images/webhookff.png"></p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<p>The webhook is the center of logic for the project. We could always hardcode static responses to user commands all wthin Dialogflow. But Wwen a user speaks an intent, we want variable responses depending on who the user is. This is where the webhook comes in. 
+<br>
+<br>
+The webhook is currently hosted on Heroku. It contains a list of functions and methods that correspond to user intents, as well as database calls to aid these functions. These can be seen in <code>app.py</code> and <code>db.py</code> respectively. <code>app.py</code> methods are described herein. </p>
+<h3 id='how-dialogflow-and-the-webhook-communicate'>How Dialogflow and the Webhook communicate</h3><h2 id='sqlite3-and-the-database'>Sqlite3 and the Database</h2>
+<p>The database sits on Heroku along with the rest of the application. NW.db is the primary database file. The database is created by running <code>python db_build.py</code> in a terminal. The database can be edited by opening <code>Tables.xlsx</code> found in the project directory. This file provides an Excel representation of the database which allows for easy editing.</p>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
+<p>Databases tables include:</p>
+<h3 id='bank_account_detail'>BANK_ACCOUNT_DETAIL</h3><h3 id='notifications'>NOTIFICATIONS</h3><h3 id='policy_information'>POLICY_INFORMATION</h3><h3 id='policy_proposals'>POLICY_PROPOSALS</h3><h3 id='users'>USERS</h3>
+<p><img src = "images/database.png"></p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+An simpleway to view the raw <code>NW.db</code> file is to utilize SQLite Manager for Firefox.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id='agile-artifacts'>Agile Artifacts</h1><h2 id='context-diagram'>Context Diagram</h2>
+<p><img src = "images/context.png"></p>
+<h2 id='uml-diagram'>UML Diagram</h2>
+<p><img src = "images/uml.png"></p>
+<h1 id='setup-and-configuration'>Setup and Configuration</h1>
+<ol>
+<li><p>Clone the Project from Github onto your local directory</p></li>
+<li><p>Open a terminal and navigate to the working directory of the project. (The place with app.py, db.py, etc)</p></li>
+<li><p>Run the command &#39;Pip install -r requirements.txt&#39;. This will install the project dependencies to your local machine</p></li>
+<li><p>To configure for authentication for Google Calendar Integration (<b>OPTIONAL</b>)</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<ul>
+<li>Open the file App.py</li>
+<li>Navigate to the function, if <strong>name</strong> == &#39;<strong>main</strong>&#39;:</li>
+<li>comment in the line ObtainThyCredentials</li>
+<li>comment out the line app.run(port=port, host=&#39;0.0.0.0&#39;, debug = True)</li>
+<li>naviate to the function ObtainThyCredentials()</li>
+<li>comment in the line credentials = tools.run_flow(flow, store)</li>
+<li>run Python app.py in the terminal. If a browser window does not open automatically open running, click the browser link in the terminal</li>
+</ul></li>
+</ol>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<p><img src = "images/authshell.png"></p>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
+<p>* at this point, log into the browser window with the account you want linked with Google Calendar
+<img src = "images/nwlogininstructions.png"></p>
+
+<p>* on successful login you will see the followup window:
+<img src = "images/authenticationflowsuccess.png"></p>
+
+<p>* Events will now post directly to your Google calendar after the schedule appointment intent. There is no need to do these steps again, unless when dealing with a different account.
+4. Comment back out ObtainThyCredentials() in f <strong>name</strong> == &#39;<strong>main</strong>&#39;:. Comment back in the line app.run(port=port, host=&#39;0.0.0.0&#39;, debug = True). Navigate to the function ObtainThyCredentials() and comment back out the line credentials = tools.run_flow(flow, store). (essentially, undo everything)</p>
+
+<ol>
+<li>Now that Google Calendar Authentication is configured, you will be good to go. We ran the project from either Dialogflow.com, or from the Google Actions Console when testing. The project can also be run anytime from the Google Assistant on your phone by saying &quot;Talk to Nate Life&quot;, or from a Google Home using that same invoking command. </li>
+</ol>
+<h1 id='app-py-methods'>App.py Methods</h1>
+<p>Methods related to the app&#39;s immediate functional requirements are located in app.py. These methods are as follows:</p>
+<h2 id='webhook'>webhook</h2><pre class="highlight python tab-python"><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">request</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">url_for</span><span class="p">,</span> <span class="n">make_response</span><span class="p">,</span> <span class="n">render_template</span>
+
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s">'/webhook'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">webhook</span><span class="p">():</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">(</span><span class="n">silent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">force</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+
+    <span class="n">res</span> <span class="o">=</span> <span class="n">processRequest</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+    <span class="n">r</span> <span class="o">=</span> <span class="n">make_response</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+    <span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s">'Content-Type'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'application/json'</span>
+    <span class="k">return</span> <span class="n">r</span>
 </code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
+<p>This endpoint gets and parses the JSON generated from Dialogflow after an action is triggered. </p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
+<p><code>POST http:/testnw2.herokuapp.com/webhook</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -346,42 +512,34 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 <td>If set to false, the result will include kittens that have already been adopted.</td>
 </tr>
 </tbody></table>
+<h2 id='processrequest'>processRequest</h2>
+<p>This endpoint processes the JSON request that we received from Dialogflow. In that JSON request exists a specific action that corresponds to what intent was triggered in Dialogflow. We map said action to a specific function within our webhook. </p>
+
+<aside class="warning">If no function exists for the given function, nothing will happen.</aside>
+<h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON received from Dialogflow to be processed</td>
+</tr>
+</tbody></table>
+<h2 id='obtainthycredentials'>obtainThyCredentials</h2><pre class="highlight python tab-python"><code> <span class="n">event</span> <span class="o">=</span> <span class="n">service</span><span class="o">.</span><span class="n">events</span><span class="p">()</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">calendarId</span><span class="o">=</span><span class="s">'primary'</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">event</span><span class="p">)</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+</code></pre>
+<p>Grants access to the Google Calendar API by storing an access token within the project directory. If no access token is found, it will 
+run an authentication flow in order to obtain said token. See <a href="https://developers.google.com/api-client-library/python/guide/aaa_client_secrets">Google API Client Secrets Flow</a> for more information. For the purposes of the demo, in order to obtain the access token for a given you, run the script under &quot;shell&quot; to the right in a command line. A browser window will appear for you to authenticate. </p>
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+After authenticating in the browser window once, you will not need to do so again unless you wish to authenticate another user. 
 </aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
+<h2 id='scheduleevent'>scheduleEvent</h2>
+<p>Maps to action &quot;Appointment&quot; in Dialogflow. Authenticates user. Schedules event on user&#39;s Google Calendar given 
+parameters  <code>date</code> and <code>time</code>. Returns a return speech back to the users.</p>
+<h3 id='parameters-2'>Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -389,38 +547,14 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>date</code> and <code>time</code> from the request.</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<h2 id='userinfo'>userInfo</h2>
+<p>Outputs the user&#39;s information: name, address, phone number, and beneficiary. Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to return the user&#39;s information. </p>
+<h3 id='parameters-3'>Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -428,10 +562,450 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
 </tr>
 </tbody></table>
+<h2 id='changeaddress'>changeAddress</h2>
+<p>Updates the user&#39;s address. Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to update a user&#39;s address.  </p>
+<h3 id='parameters-4'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='changephone'>changePhone</h2>
+<p>Updates the user&#39;s phone number. Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to update a user&#39;s phone number.  </p>
+<h3 id='parameters-5'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='changebeneficiary'>changeBeneficiary</h2>
+<p>Updates the user&#39;s beneficiary. Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to update a user&#39;s beneficiary.  </p>
+<h3 id='parameters-6'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='changechecking'>changeChecking</h2>
+<p>Updates the user&#39;s checking account information. Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to update a user&#39;s checking account information.  </p>
+<h3 id='parameters-7'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+The <code>change</code> methods make permanent updates to the database, until the special <code>resetDB</code> method is called (see later).
+</aside>
+<h2 id='totalpremiumandduedate'>totalPremiumAndDueDate</h2>
+<p>Retrieve the user&#39;s total amount due across all bills, and their due dates. 
+Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to obtain the user&#39;s premium information.</p>
+<h3 id='parameters-8'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='confirmbalance'>confirmBalance</h2><pre class="highlight python tab-python"><code><span class="k">def</span> <span class="nf">confirmBalance</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"result"</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"parameters"</span><span class="p">)</span>
+    <span class="n">userID</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"userID"</span><span class="p">))</span>
+    <span class="n">balance</span> <span class="o">=</span> <span class="n">getCheckingAccountBalance</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">prems_and_dates</span> <span class="o">=</span> <span class="n">getAmountDueAndDuedates</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">prems_and_dates</span><span class="p">)):</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">prems_and_dates</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">balance</span> <span class="o">&gt;=</span> <span class="n">total</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"Yes, your checking account balance is "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">balance</span><span class="p">)</span><span class="o">+</span> <span class="s">" and it is enough to pay your premium."</span>
+        <span class="n">speech</span> <span class="o">+=</span> <span class="s">"would you like to go ahead with the payment?"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"No, your checking account balance is "</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">balance</span><span class="p">)</span><span class="o">+</span> <span class="s">" and it is not enough to pay your premium."</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<p>Retrieve a user&#39;s balance. Used to determine if they have enough funds in account to pay off a given premium
+Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to obtain the user&#39;s balance</p>
+<h3 id='parameters-9'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='amountandduedate'>amountAndDueDate</h2><pre class="highlight python tab-python"><code> <span class="k">def</span> <span class="nf">amountDueAndDueDate</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"result"</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"parameters"</span><span class="p">)</span>
+    <span class="n">userID</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"userID"</span><span class="p">))</span>
+    <span class="n">prems_and_dates</span> <span class="o">=</span> <span class="n">getAmountDueAndDuedates</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">speech1</span> <span class="o">=</span> <span class="s">""</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">prems_and_dates</span><span class="p">)):</span>
+        <span class="n">insurance_type</span> <span class="o">=</span> <span class="n">prems_and_dates</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">prems_and_dates</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">speech1</span> <span class="o">+=</span> <span class="s">" Your "</span> <span class="o">+</span> <span class="n">insurance_type</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"_"</span><span class="p">,</span> <span class="s">" "</span><span class="p">)</span> <span class="o">+</span> <span class="s">" payment due is "</span> <span class="o">+</span> \
+            <span class="nb">str</span><span class="p">(</span><span class="n">prems_and_dates</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s">" dollars."</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">prems_and_dates</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">speech</span> <span class="o">=</span> <span class="s">"You have "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">" payments due."</span>
+    <span class="n">speech</span> <span class="o">+=</span> <span class="n">speech1</span>
+    <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">+=</span> <span class="s">" Your due date is "</span> <span class="o">+</span>  <span class="n">date</span> <span class="o">+</span> <span class="s">". Do you want to check your account balance or make a payment?"</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<p>Retrieve a user&#39;s amount due and due date for a given insurance type or payment plan. 
+Using the request <code>req</code> JSON,
+we obtain the user&#39;s ID. Then we query the database using this ID to obtain the user&#39;s balance</p>
+<h3 id='parameters-10'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> from the request.</td>
+</tr>
+</tbody></table>
+
+<p><br> </p>
+
+<aside class="notice">
+The <code>change</code> This method differs from the <code>totalPremiumAndDueDate</code> method in that this method retrieves the amount due and due date for a specific bill, while 
+<code>totalPremiumAndDueDate</code> retrieves the total amount due across all bills.
+</aside>
+<h2 id='payment'>payment</h2><pre class="highlight python tab-python"><code> <span class="k">def</span> <span class="nf">payment</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"result"</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"parameters"</span><span class="p">)</span>
+    <span class="n">userID</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"userID"</span><span class="p">))</span>
+    <span class="n">insurance_type</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"insurance_type"</span><span class="p">))</span>
+    <span class="n">change</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">if</span> <span class="n">insurance_type</span> <span class="o">==</span> <span class="s">"all_insurance"</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"OK, I have made the "</span>
+        <span class="n">prems_and_dates</span> <span class="o">=</span> <span class="n">getAmountDueAndDuedates</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">prems_and_dates</span><span class="p">)):</span>
+            <span class="n">result</span><span class="p">,</span> <span class="n">remain</span><span class="p">,</span> <span class="n">due</span> <span class="o">=</span> <span class="n">payPremium</span><span class="p">(</span><span class="n">userID</span><span class="p">,</span> <span class="n">prems_and_dates</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+                <span class="n">change</span> <span class="o">=</span> <span class="bp">True</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">prems_and_dates</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">prems_and_dates</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                        <span class="n">speech</span> <span class="o">=</span> <span class="n">speech</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">speech</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span>
+                    <span class="n">speech</span> <span class="o">+=</span> <span class="s">"and "</span>
+                <span class="n">speech</span> <span class="o">+=</span> <span class="n">prems_and_dates</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"_"</span><span class="p">,</span> <span class="s">" "</span><span class="p">)</span> <span class="o">+</span> <span class="s">", "</span>
+        <span class="k">if</span> <span class="n">change</span><span class="p">:</span>
+            <span class="n">speech</span> <span class="o">=</span> <span class="n">speech</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">speech</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+        <span class="n">speech</span> <span class="o">+=</span> <span class="s">" payment for you. Your checking account has "</span> <span class="o">+</span> \
+                  <span class="nb">str</span><span class="p">(</span><span class="n">remain</span><span class="p">)</span> <span class="o">+</span> <span class="s">" dollars left."</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span><span class="p">,</span> <span class="n">remain</span><span class="p">,</span> <span class="n">due</span> <span class="o">=</span> <span class="n">payPremium</span><span class="p">(</span><span class="n">userID</span><span class="p">,</span> <span class="n">insurance_type</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+            <span class="n">speech</span> <span class="o">=</span> <span class="s">"OK, I have made the "</span> <span class="o">+</span> \
+                     <span class="n">insurance_type</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"_"</span><span class="p">,</span> <span class="s">" "</span><span class="p">)</span> <span class="o">+</span> \
+                     <span class="s">" payment for you. Your checking account has "</span> <span class="o">+</span> \
+                     <span class="nb">str</span><span class="p">(</span><span class="n">remain</span><span class="p">)</span> <span class="o">+</span> <span class="s">" dollars left."</span>
+        <span class="k">elif</span> <span class="n">due</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">speech</span> <span class="o">=</span> <span class="s">"Sorry, I can't make the payment for you because "</span> <span class="o">+</span> \
+                     <span class="s">"you don't have enough credit in your checking account."</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">speech</span> <span class="o">=</span> <span class="s">"You have already made the payment."</span>
+    <span class="n">speech</span> <span class="o">+=</span> <span class="s">" Is there anything else I can help you with?"</span>
+
+
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<p>Pays either one type of insurance plan, or all plans the user is enrolled in, provided whatever the user voices. 
+If payment is successful, updates database with new values for the checking account after a given payment is made. If the user does not have the
+necessary amount in their checking account, the payment will not be made, and the method will return a notice message. 
+If a certain payment has already been made, the method will alert the user that they have already made that payment.</p>
+
+<p><br></p>
+
+<p><br></p>
+
+<p><br></p>
+<h3 id='parameters-11'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> and <code>insurance_type</code> from the request.</td>
+</tr>
+</tbody></table>
+
+<p><br> </p>
+<h2 id='lifeinsurancepolicy'>lifeInsurancePolicy</h2><pre class="highlight python tab-python"><code><span class="k">def</span> <span class="nf">lifeInsurancePolicy</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"result"</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"parameters"</span><span class="p">)</span>
+    <span class="n">userID</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"userID"</span><span class="p">))</span>
+
+    <span class="n">overallROR</span> <span class="o">=</span> <span class="n">getOverallReturnRate</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">lastMonthROR</span> <span class="o">=</span> <span class="n">getLastMonthReturnRate</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">internationInvestment</span> <span class="o">=</span> <span class="n">getInternationInvestment</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">internationalROR</span> <span class="o">=</span> <span class="n">getInternationalROR</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+
+    <span class="n">rorDifference</span> <span class="o">=</span> <span class="n">lastMonthROR</span> <span class="o">-</span> <span class="n">overallROR</span>
+
+    <span class="k">if</span> <span class="n">rorDifference</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c">#speech = "Your return rate has decreased by " + str(rorDifference) + " percent over the past month relative to your overall rate of return. You have invested " + str(internationInvestment) + " dollars in international markets, this having a rate of return of " + str(internationalROR) + " percent."</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"The cash value of your policy has been decreasing in value. Would you like to hear more information?"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c">#speech = "Your return rate has increased by " + str(rorDifference) + " percent over the past month relative to your overall rate of return. You have invested " + str(internationInvestment) + " dollars in international markets, this having a rate of return of " + str(internationalROR) + " percent."</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"The cash value of your policy has increased in value. Would you like to hear more information?"</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<p>Performs a basic calculation to determine if a user&#39;s policy has decreased or increased in value over time. If the rate of return for the last rolling month is less than the user&#39;s overall rate of return, we say 
+that the user&#39;s rate of return has decreased. Otherwise, it has increased. </p>
+
+<p><br></p>
+
+<p><br></p>
+<h3 id='parameters-12'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code>  from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='lifeinsurancepolicybreakdown'>lifeInsurancePolicyBreakdown</h2><pre class="highlight python tab-python"><code><span class="k">def</span> <span class="nf">lifeInsurancePolicyBreakdown</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"result"</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"parameters"</span><span class="p">)</span>
+    <span class="n">userID</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"userID"</span><span class="p">))</span>
+
+    <span class="n">overallROR</span> <span class="o">=</span> <span class="n">getOverallReturnRate</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">lastMonthROR</span> <span class="o">=</span> <span class="n">getLastMonthReturnRate</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">internationInvestment</span> <span class="o">=</span> <span class="n">getInternationInvestment</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">internationalROR</span> <span class="o">=</span> <span class="n">getInternationalROR</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+
+    <span class="n">rorDifference</span> <span class="o">=</span> <span class="n">lastMonthROR</span> <span class="o">-</span> <span class="n">overallROR</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">rorDifference</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rorDifference</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"Your return rate has decreased by "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rorDifference</span><span class="p">)</span> <span class="o">+</span> <span class="s">" percent over the past month relative to your overall rate of return. You have invested "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">internationInvestment</span><span class="p">)</span> <span class="o">+</span> <span class="s">" dollars in international markets, the rate of return of these funds has fallen "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">internationalROR</span><span class="p">)</span> <span class="o">+</span> <span class="s">" percent."</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"Your return rate has increased by "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rorDifference</span><span class="p">)</span> <span class="o">+</span> <span class="s">" percent over the past month relative to your overall rate of return. You have invested "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">internationInvestment</span><span class="p">)</span> <span class="o">+</span> <span class="s">" dollars in international markets, this having a rate of return of "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">internationalROR</span><span class="p">)</span> <span class="o">+</span> <span class="s">" percent."</span>
+
+    <span class="n">speech</span> <span class="o">=</span> <span class="n">speech</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'-'</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span>
+    <span class="n">speech</span> <span class="o">+=</span> <span class="s">" Would you like to set up an appointment with an agent?"</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<p>idea maybe show how each method relates to speeech.</p>
+
+<p>The method <code>lifeInsurancePolicy</code> will ask the user if they want to hear more information regarding life insurance. If they agree, this method is called. Uses <code>db.py</code> methods <code>getOverallReturnRate(userID)</code> <code>getLastMonthReturnRate(userID)</code> 
+<code>getInternationInvestment(userID)</code> and <code>getInternationalROR(userID)</code> to retrieve the overall rate of return, last month&#39;s rate of return, international investments, and international rate of return respectively and provide this data to the user.</p>
+
+<p><br></p>
+
+<p><br></p>
+<h3 id='parameters-13'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code>  from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='notifications-2'>notifications</h2><pre class="highlight python tab-python"><code><span class="k">def</span> <span class="nf">notifications</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"result"</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"parameters"</span><span class="p">)</span>
+    <span class="n">userID</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"userID"</span><span class="p">))</span>
+
+    <span class="n">notifications</span> <span class="o">=</span> <span class="n">getNotifications</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">notifications</span><span class="p">)</span>
+
+    <span class="n">numOfNotifs</span> <span class="o">=</span> <span class="n">getNumberOfNotifications</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+
+    <span class="n">speech</span> <span class="o">=</span> <span class="s">"Looks like you have "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">numOfNotifs</span><span class="p">)</span> <span class="o">+</span> <span class="s">" notifications. "</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">numOfNotifs</span><span class="p">):</span>
+        <span class="n">speech</span> <span class="o">+=</span> <span class="s">"Number "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">": "</span>
+        <span class="n">speech</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">notifications</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="s">" "</span>
+
+    <span class="n">deleteThese</span> <span class="o">=</span> <span class="s">"()</span><span class="se">\'\"</span><span class="s">"</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">deleteThese</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="n">speech</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span>
+
+    <span class="n">speech</span> <span class="o">=</span> <span class="n">speech</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">","</span><span class="p">,</span> <span class="s">"."</span><span class="p">)</span>
+    <span class="n">speech</span> <span class="o">+=</span> <span class="s">"would you like to review your payment due?"</span>
+    <span class="c">#print(speech)</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<p>Retrives user notifications from the database. </p>
+<h3 id='parameters-14'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code>  from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='verifypinfufillrequest'>verifyPinFufillRequest</h2><pre class="highlight python tab-python"><code><span class="k">def</span> <span class="nf">verifyPinFufillRequest</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"result"</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"parameters"</span><span class="p">)</span>
+
+    <span class="n">userID</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"userID"</span><span class="p">))</span>
+    <span class="n">pin</span> <span class="o">=</span> <span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"mypin"</span><span class="p">))</span>
+    <span class="n">pin</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span>
+
+    <span class="c">#hash the pin</span>
+    <span class="n">pin</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">)</span>
+    <span class="n">encryptedPin</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha512</span><span class="p">(</span><span class="n">pin</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="n">encryptedPin</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">encryptedPin</span><span class="p">)</span>
+
+    <span class="c">#compare hashed pin to pin from database (use query)</span>
+    <span class="n">databasePin</span> <span class="o">=</span> <span class="n">getHashedUserPin</span><span class="p">(</span><span class="n">userID</span><span class="p">)</span>
+    <span class="n">databasePin</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">databasePin</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">databasePin</span> <span class="o">==</span> <span class="n">encryptedPin</span><span class="p">:</span>
+        <span class="c">#print("TRUE")</span>
+
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"Okay. Acquiring your secrets. One moment"</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">speech</span> <span class="o">=</span> <span class="s">"Incorrect Pin. Returning to main menu."</span>
+    <span class="k">return</span><span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<aside class="warning">Method not used in current version.</aside>
+
+<p>As a concept, if the user is going to access something otherwise confidential, they would speak or type a pin into their assistant.
+We get the pin number the user gave the assistant through the <code>mypin</code> parameter in the JSON. We hash this pin 
+using the same hash used for the database pin, and compare the incoming pin versus the db pin. If they are equal, we carry out user&#39;s request. </p>
+
+<p><br></p>
+<h3 id='parameters-15'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>req</td>
+<td>The request JSON. We obtain parameters <code>userID</code> and <code>mypin</code> from the request.</td>
+</tr>
+</tbody></table>
+<h2 id='dbreset'>dbReset</h2><pre class="highlight python tab-python"><code><span class="k">def</span> <span class="nf">dbReset</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s">'python db_build_remote.py'</span><span class="p">)</span>
+    <span class="n">speech</span> <span class="o">=</span> <span class="s">"The database has been reset!"</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>
+</code></pre>
+<p>This is a special function created for demo purposes to reset database. </p>
+
+<aside class="warning">This function is not meant to satisfy any particular use case regarding the project. This is only for demo purposes; to yield the same experience each round of the demo. </aside>
+<h2 id='initialize'>initialize</h2><pre class="highlight python tab-python"><code><span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s">'python db_build_remote.py'</span><span class="p">)</span>
+    <span class="n">speech</span> <span class="o">=</span> <span class="s">"Hello! I have some important updates regarding your Nationwide accounts. Would you like to hear it?"</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s">"speech"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="s">"displayText"</span><span class="p">:</span> <span class="n">speech</span><span class="p">,</span>
+        <span class="c"># "data": data,</span>
+        <span class="c"># "contextOut": [],</span>
+        <span class="s">"source"</span><span class="p">:</span> <span class="s">"Nationwide-financial-assistant"</span>
+    <span class="p">}</span>    
+</code></pre>
+<p>(Re)Initializes the database and assistant after the reset.</p>
 <h1 id='errors'>Errors</h1>
 <aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files...just save them to the `includes` folder and add them to the top of your `index.md`'s frontmatter. Files are included in the order listed.</aside>
 
@@ -492,10 +1066,7 @@ Remember — a happy kitten is an authenticated kitten!
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
                 <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
