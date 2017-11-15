@@ -60,7 +60,13 @@ The Excel file representation of the database. Xlrd reads from this file in <cod
 The python file where automated unit tests are ran.
 
 # Architecture and System Components
+
+## Architecture Logical View
 <img src="images/archgen.png">
+
+## Architecture Physical View
+<img src="images/physicalview.png">
+## Process View
 
 ## General
 The architecture for Google Home applications is different than conventional software solutions, but straightforward. 
@@ -121,6 +127,12 @@ An simpleway to view the raw <code>NW.db</code> file is to utilize SQLite Manage
 
 
 # Agile Artifacts
+
+## Context Diagram
+<img src = "images/context.png">
+
+## UML Diagram
+<img src = "images/uml.png">
 
 
 # App.py Methods
