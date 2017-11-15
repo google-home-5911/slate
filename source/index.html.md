@@ -2,10 +2,7 @@
 title: Nationwide Life Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
   - python
-  - javascript
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -66,7 +63,6 @@ The python file where automated unit tests are ran.
 
 ## Architecture Physical View
 <img src="images/physicalview.png">
-## Process View
 
 ## General
 The architecture for Google Home applications is different than conventional software solutions, but straightforward. 
@@ -133,6 +129,41 @@ An simpleway to view the raw <code>NW.db</code> file is to utilize SQLite Manage
 
 ## UML Diagram
 <img src = "images/uml.png">
+
+
+# Setup and Configuration
+
+1. Clone the Project from Github onto your local directory
+
+2. Open a terminal and navigate to the working directory of the project. (The place with app.py, db.py, etc)
+
+3. Run the command 'Pip install -r requirements.txt'. This will install the project dependencies to your local machine
+
+3. To configure for authentication for Google Calendar Integration (<b>OPTIONAL</b>)
+	* Open the file App.py
+	* Navigate to the function, if __name__ == '__main__':
+	* comment in the line ObtainThyCredentials
+	* comment out the line app.run(port=port, host='0.0.0.0', debug = True)
+	* naviate to the function ObtainThyCredentials()
+	* comment in the line credentials = tools.run_flow(flow, store)
+	* run Python app.py in the terminal. If a browser window does not open automatically open running, click the browser link in the terminal
+
+<img src = "images/authshell.png">
+
+	* at this point, log into the browser window with the account you want linked with Google Calendar
+<img src = "images/nwlogininstructions.png">
+
+	* on successful login you will see the followup window:
+<img src = "images/authenticationflowsuccess.png">
+
+	* Events will now post directly to your Google calendar after the schedule appointment intent. There is no need to do these steps again, unless when dealing with a different account.
+4. Comment back out ObtainThyCredentials() in f __name__ == '__main__':. Comment back in the line app.run(port=port, host='0.0.0.0', debug = True). Navigate to the function ObtainThyCredentials() and comment back out the line credentials = tools.run_flow(flow, store). (essentially, undo everything)
+
+5. Now that Google Calendar Authentication is configured, you will be good to go. We ran the project from either Dialogflow.com, or from the Google Actions Console when testing. The project can also be run anytime from the Google Assistant on your phone by saying "Talk to Nate Life", or from a Google Home using that same invoking command. 
+
+
+
+
 
 
 # App.py Methods
