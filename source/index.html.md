@@ -64,6 +64,9 @@ The python file where automated unit tests are ran.
 ## Architecture Physical View
 <img src="images/physicalview.png">
 
+## Conversational Script to Intents Mapping
+<img src ="images/intentstoscript.png">
+
 ## General
 The architecture for Google Home applications is different than conventional software solutions, but straightforward. 
 Above is a sequence diagram of the process. When the user speaks a command, called an *intent*, into the device, it gets processed by a speech engine called "Dialogflow". 
