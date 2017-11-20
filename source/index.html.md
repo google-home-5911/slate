@@ -133,6 +133,9 @@ An simpleway to view the raw <code>NW.db</code> file is to utilize SQLite Manage
 ## UML Diagram
 <img src = "images/uml.png">
 
+## Product Backlog and Completion 
+<img src = "images/FCP1.png">
+<img src = "images/FCP2.png">
 
 # Setup and Configuration
 
